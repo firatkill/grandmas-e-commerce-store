@@ -15,11 +15,17 @@ function CheckoutPageContainer() {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.cartItems);
   const getUserInfosFromDb = useGetUserInfosFromDb();
+  const userAddress = useSelector((state) => state.user.userAddress);
   const userId = useSelector((state) => state.user.userId);
   const placeOrder = usePlaceOrder();
+  console.log(userAddress);
   const placeOrders = () => {
-    placeOrder();
-    dispatch(cartActions.assignCartItems([]));
+    if (!userAddress) {
+      alert("You should Provide an address first.");
+    } else {
+      placeOrder();
+      dispatch(cartActions.assignCartItems([]));
+    }
   };
   useEffect(() => {
     getUserInfosFromDb(userId);
@@ -67,7 +73,7 @@ function CheckoutPageContainer() {
           </ul>
         </div>
         <button onClick={placeOrders} className={styled.placeOrderButton}>
-          <Link to="/orderPlaced">Place Order</Link>
+          <Link to={userAddress && "/orderPlaced"}>Place Order</Link>
         </button>
       </div>
     </div>
