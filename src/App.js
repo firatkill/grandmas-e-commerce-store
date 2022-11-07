@@ -12,6 +12,8 @@ import PasswordPage from "./Pages/PasswordPage";
 import CheckoutPage from "./Pages/CheckoutPage";
 import OrdersPage from "./Pages/OrdersPage";
 import OrderPlacedPage from "./Pages/OrderPlacedPage";
+import CompanyPages from "./Pages/CompanyPages";
+
 import { uiActions } from "./Redux/ui-slice";
 import { useSelector, useDispatch } from "react-redux";
 import { useAddUserToDb } from "./Hooks/CustomHooks";
@@ -20,7 +22,7 @@ function App() {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
 
   const orders = useSelector((state) => state.user.userOrders);
-  console.log(orders);
+
   const isNavbarDropdown = useSelector((state) => state.ui.isNavbarDropdown);
   const closeDropdown = (e) => {
     if (isNavbarDropdown) {
@@ -49,7 +51,9 @@ function App() {
             <Route path="/orders" element={<OrdersPage />} />
             <Route path="/orderPlaced" element={<OrderPlacedPage />} />
           </>
-        )}
+        )}{" "}
+        <Route path="/company/:pageName" element={<CompanyPages />} />
+        <Route path="/legal/:pageName" element={<CompanyPages />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import MenuCSS from "./Menu.module.css";
 import MenuItemCard from "../MenuItemCard/MenuItemCard";
-import { DUMMY_ITEMS } from "../../../DUMMY_DATA/DUMMY_DATA";
 import { useFetchMenu } from "../../../Hooks/CustomHooks";
 import Spinner from "../../UI/Spinner/Spinner";
 import { useSelector, useDispatch } from "react-redux";

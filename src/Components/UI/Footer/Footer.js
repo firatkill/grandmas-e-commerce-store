@@ -14,17 +14,17 @@ function Footer() {
       <ul className={styled.footer__company}>
         <h3>COMPANY</h3>
         <li>
-          <Link to="/about" className={styled.link}>
+          <Link to="/company/about" className={styled.link}>
             ABOUT US
           </Link>
         </li>
         <li>
-          <Link to="/faq" className={styled.link}>
+          <Link to="/company/faq" className={styled.link}>
             FAQ
           </Link>
         </li>
         <li>
-          <Link to="/contact" className={styled.link}>
+          <Link to="/company/contact" className={styled.link}>
             CONTACT US
           </Link>
         </li>
@@ -32,17 +32,17 @@ function Footer() {
       <ul className={styled.footer__legal}>
         <h3>LEGAL</h3>
         <li>
-          <Link to="/terms" className={styled.link}>
+          <Link to="/legal/terms" className={styled.link}>
             TERMS & CONDITIONS
           </Link>
         </li>
         <li>
-          <Link to="/privacypolicy" className={styled.link}>
+          <Link to="/legal/privacypolicy" className={styled.link}>
             PRIVACY POLICY
           </Link>
         </li>
         <li>
-          <Link to="/disclaimer" className={styled.link}>
+          <Link to="/legal/disclaimer" className={styled.link}>
             DISCLAIMER
           </Link>
         </li>
@@ -58,14 +58,7 @@ function Footer() {
           >
             <FaFacebookSquare className={styled.icon} />
           </a>
-          <a
-            href="https://www.instagram.com"
-            className={styled.iconLink}
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FaInstagramSquare className={styled.icon} />
-          </a>
+
           <a
             href="https://www.twitter.com"
             className={styled.iconLink}
