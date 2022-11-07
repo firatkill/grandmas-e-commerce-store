@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { somefunc } from "../firebase/firebase";
+
 function CompanyPages() {
   const params = useParams();
   const containerStyle = {
@@ -11,7 +11,7 @@ function CompanyPages() {
     margin: "auto",
     "justify-content": "space-around",
   };
-  somefunc();
+
   const headerStyle = { margin: "0" };
   const paraStyle = { width: "80%", "text-align": "center" };
   console.log(params.pageName);

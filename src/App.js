@@ -21,8 +21,6 @@ function App() {
   const dispatch = useDispatch();
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
 
-  const orders = useSelector((state) => state.user.userOrders);
-
   const isNavbarDropdown = useSelector((state) => state.ui.isNavbarDropdown);
   const closeDropdown = (e) => {
     if (isNavbarDropdown) {

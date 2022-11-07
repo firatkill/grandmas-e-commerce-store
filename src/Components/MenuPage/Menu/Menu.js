@@ -3,8 +3,8 @@ import MenuCSS from "./Menu.module.css";
 import MenuItemCard from "../MenuItemCard/MenuItemCard";
 import { useFetchMenu } from "../../../Hooks/CustomHooks";
 import Spinner from "../../UI/Spinner/Spinner";
-import { useSelector, useDispatch } from "react-redux";
-import { menuActions } from "../../../Redux/menu-slice";
+import { useSelector } from "react-redux";
+
 function Menu(props) {
   const styled = MenuCSS;
   const fetchMenu = useFetchMenu();

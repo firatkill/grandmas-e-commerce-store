@@ -3,6 +3,7 @@ import LoginPageContainerCSS from "./LoginPageContainer.module.css";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { useUserLogin } from "../../../Hooks/CustomHooks";
+import { googleSignIn } from "../../../firebase/firebaseAuth";
 function LoginPageContainer() {
   const styled = LoginPageContainerCSS;
   const userLogin = useUserLogin();
@@ -52,7 +53,12 @@ function LoginPageContainer() {
       </form>
       <div className={styled.googleButton}>
         <h3>OR</h3>
-        <button className={styled.googleButton}>
+        <button
+          onClick={() => {
+            googleSignIn();
+          }}
+          className={styled.googleButton}
+        >
           <FcGoogle /> Sign in using Google
         </button>
       </div>

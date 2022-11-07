@@ -1,5 +1,4 @@
 import React from "react";
-import { FaStaylinked } from "react-icons/fa";
 
 function OrderPlacedPage() {
   return (
