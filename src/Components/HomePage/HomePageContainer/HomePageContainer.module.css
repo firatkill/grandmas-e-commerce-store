@@ -1,0 +1,95 @@
+.HomePageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.backgroundImg {
+  position: fixed;
+  z-index: -1;
+
+  width: 100%;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: left;
+  margin-left: 2rem;
+  justify-content: center;
+  margin-bottom: 20%;
+  font-family: "Pacifico", cursive;
+  color: rgb(242, 120, 151);
+}
+.brandLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2vw;
+  font-family: "Pacifico", cursive;
+  font-weight: bolder;
+  justify-content: center;
+
+  cursor: pointer;
+}
+.brandLogo h1 {
+  margin: 0;
+}
+.brandLogo img {
+  margin-right: 1vw;
+  width: 5vw;
+}
+.brand .subtitle {
+  font-size: 3vw;
+  margin: 0;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.link {
+  border-radius: 12px;
+  background-color: white;
+  width: 50%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2vw;
+  margin-left: 2vw;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(242, 120, 151);
+  margin-top: 2vw;
+  overflow: hidden;
+}
+.link p {
+  position: relative;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+}
+.link p:hover {
+  z-index: 0;
+}
+.link p::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.link p:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link p::before {
+  content: "Order Now !";
+  color: white;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgb(242, 120, 151);
+  z-index: 5;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,134 @@
+.CartContainer {
+  width: 30vw;
+
+  box-sizing: border-box;
+  text-align: center;
+  height: 100% !important;
+  background-color: red;
+}
+.cart {
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  top: 0 !important;
+  border-radius: 15px;
+  overflow: hidden;
+  max-height: 70vh;
+  max-width: 30vw;
+  min-width: 30vw;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.cartHeader {
+  height: fit-content;
+  border-bottom: 1px solid black;
+}
+.cart[disable="true"] .clearButton {
+  background-color: gray !important;
+  opacity: 0.6 !important;
+}
+.clearCart {
+  height: 4vw;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.clearCart h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+  margin-left: 3vw !important;
+}
+.clearButton {
+  width: 35%;
+  font-size: 1.3vw;
+  background-color: red;
+  color: white;
+  margin: 0;
+  height: 100%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  font-weight: bolder;
+  border-top-right-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.cart[disable="false"] .clearButton:hover {
+  background-color: white;
+  color: Red;
+  border-color: red;
+}
+.cart[disable="false"]:hover {
+  box-shadow: 0px 0px 15px 5px rgba(242, 120, 151, 0.3);
+}
+.cart[disable="true"]:hover {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+}
+.cartContent {
+  overflow: scroll;
+  max-height: 40vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+.emptyCart {
+  font-size: 2vw;
+}
+.emptyCart p {
+  margin: 0;
+}
+.emptyCartIcon {
+  font-size: 4vw;
+}
+
+.cartContent__listGroup {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.cartFooter {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vw;
+  width: 100%;
+}
+.totalAmount {
+  align-self: flex-start;
+  font-weight: bolder;
+  font-size: 2vw;
+  margin: 0;
+  margin-left: 1vw;
+}
+.orderButton {
+  font-size: 2vw;
+  background-color: rgb(242, 120, 151);
+  color: white;
+  font-weight: bolder;
+  width: 100%;
+
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid transparent;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.orderButton a {
+  display: block;
+  padding: 0.5vw 0vw;
+  width: 100%;
+  height: 100% !important;
+  text-decoration: none;
+  color: unset;
+}
+.orderButton:hover {
+  background-color: white;
+  border-color: rgb(242, 120, 151);
+  color: rgb(242, 120, 151);
+}
+.cartFooter[disable="true"] .orderButton {
+  opacity: 0.6;
+  background-color: gray !important;
+  border-color: transparent !important;
+  color: white !important;
+  cursor: default !important;
+}
+.cartFooter[disable="true"] p {
+  display: none;
+}

@@ -1,0 +1,108 @@
+.NavbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  z-index: 500;
+}
+.brand {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+
+  align-items: center;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  font-weight: bolder;
+  justify-content: center;
+  color: rgb(242, 120, 151);
+  cursor: pointer;
+}
+.brand p {
+  margin: 0;
+  margin-left: 1rem;
+}
+.userActionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 3rem;
+}
+.userActionButtons .link {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: rgb(242, 120, 151);
+  font-weight: bolder;
+  text-decoration: none;
+  position: Relative;
+}
+.userActionButtons .link::after {
+  position: Absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: red;
+  left: 50%;
+  bottom: -10px;
+  transition: all 0.4s ease-in-out;
+}
+.link1:hover .link::after {
+  width: 100%;
+  left: 0;
+}
+.link2:hover .link::after {
+  width: 100%;
+  left: 0;
+}
+.link3:hover .link::after {
+  width: 100%;
+  left: 0;
+}
+.link4:hover .link::after {
+  width: 100%;
+  left: 0;
+}
+.link[status="active"]::after {
+  width: 100%;
+  left: 0;
+}
+.link[status="active"] {
+  color: red;
+}
+.DropdownHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+  cursor: pointer;
+  border: 3px solid red;
+  border-radius: 15px;
+  color: red;
+
+  font-weight: bolder;
+}
+.DropdownHeader:hover {
+  box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.2);
+}
+.DropdownHeader_inner {
+  padding: 0.3rem 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.DropdownHeader_inner p {
+  margin: 0;
+}
+.expandIcon {
+  margin-bottom: -0.5rem;
+  font-size: 2vw;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+}

@@ -1,0 +1,107 @@
+.LocationBoxContainer {
+  margin-bottom: 2vw !important;
+}
+.errorBox {
+  background-color: rgb(249, 215, 218);
+  border-radius: 10px;
+  font-size: 1.5vw;
+  padding: 1vw 2vw;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+}
+.errorBox p {
+  margin: 0;
+  color: rgb(114, 28, 35);
+  font-weight: bolder;
+}
+.addAddressButton {
+  font-size: 1.5vw;
+  background-color: rgb(242, 120, 151);
+  color: white;
+  font-weight: bolder;
+  padding: 0.5vw 1vw;
+  cursor: pointer;
+
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.addAddressButton:hover {
+  background-color: white;
+  border-color: rgb(242, 120, 151);
+  color: rgb(242, 120, 151);
+}
+.AddressScreenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 2vw !important;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.AddressScreenContainer input {
+  border: none;
+  background-color: rgb(221, 221, 221);
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  font-weight: bolder;
+  padding-left: 1vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+.AddressScreenContainer input:focus {
+  background-color: rgb(136, 136, 136);
+}
+.AddressScreenContainer input:hover {
+  background-color: rgb(187, 187, 187);
+}
+.AddressScreenContainer input:focus::placeholder {
+  color: white !important;
+}
+.AddressScreenContainer .buttons {
+  margin-top: 1vw;
+}
+.AddressScreenContainer .buttons button {
+  font-size: 1.5vw;
+  background-color: rgb(242, 120, 151);
+  color: white;
+  font-weight: bolder;
+  padding: 0.5vw 1vw;
+  cursor: pointer;
+
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+.AddressScreenContainer .buttons button:first-of-type {
+  background-color: rgb(187, 186, 187);
+  margin-right: 1rem;
+}
+.AddressScreenContainer .buttons button:first-of-type:hover {
+  border-color: rgb(187, 186, 187);
+  background-color: transparent;
+  color: rgb(187, 187, 187);
+}
+.AddressScreenContainer .buttons button:hover {
+  background-color: white;
+  border-color: rgb(242, 120, 151);
+  color: rgb(242, 120, 151);
+}
+.addressBox {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.addressBox h3 {
+  margin: 0;
+  margin-bottom: 1vw;
+}
+.addressBox p {
+  margin: 0;
+  margin-bottom: 0.5vw;
+}

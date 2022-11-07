@@ -1,0 +1,17 @@
+.MenuPageContainer {
+  width: 90vw;
+  margin: auto;
+  overflow: visible;
+  position: relative;
+}
+.MenuComponents {
+  display: flex;
+
+  position: relative;
+  align-items: flex-start;
+  justify-content: Space-between;
+}
+.maxWidth {
+  max-width: 55vw;
+  margin-right: 2rem;
+}

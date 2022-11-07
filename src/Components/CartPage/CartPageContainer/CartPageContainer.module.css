@@ -1,0 +1,53 @@
+.CartPageContainer {
+  min-height: 80vh;
+  width: 90%;
+  margin: auto;
+}
+.CartPageTitle h3 {
+  font-size: 2vw;
+  margin: 0;
+}
+.cartBalance {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+  font-size: 1.5vw;
+  align-items: flex-start;
+}
+.rawPrice {
+  margin: 0;
+}
+.taxtAmount {
+  margin: 0;
+}
+.totalPrice {
+  margin: 0;
+}
+.checkoutButton {
+  font-size: 1.5vw;
+  margin-top: 2vw;
+  background-color: rgb(242, 120, 151);
+  color: white;
+  font-weight: bolder;
+
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid transparent;
+  border-radius: 15px;
+}
+
+.checkoutButton:hover {
+  background-color: white;
+  border-color: rgb(242, 120, 151);
+  color: rgb(242, 120, 151);
+}
+.checkoutButton a {
+  padding: 1vw !important;
+  text-decoration: none;
+  color: unset;
+  display: block;
+
+  width: 100%;
+  height: 100% !important;
+}

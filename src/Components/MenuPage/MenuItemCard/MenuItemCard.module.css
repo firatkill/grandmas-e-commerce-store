@@ -1,0 +1,98 @@
+.MenuItemCardContainer {
+  border-radius: 15px;
+  background-color: rgb(240, 240, 240);
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+}
+.checkIcon {
+  position: absolute;
+  font-size: 1vw;
+  top: 15%;
+  animation-name: grow;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.7s;
+  align-self: center;
+  justify-self: center;
+
+  opacity: 0.6;
+}
+@keyframes grow {
+  from {
+    font-size: 1vw;
+  }
+  to {
+    font-size: 16vw;
+  }
+}
+.cardImgContainer {
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.cardImg {
+  width: 100%;
+
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.MenuItemCardContainer:hover .cardImg {
+  transform: scale(1.2);
+}
+.cardTitle {
+  font-weight: bolder;
+  font-size: 2vw;
+  margin: 0;
+  margin-top: 0.7vw;
+  color: rgb(242, 120, 151);
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-height: 30%;
+  min-height: 30%;
+}
+.cardText {
+  margin-top: 0.7vw;
+  opacity: 0.6;
+  font-size: 1.2vw;
+}
+.cardText__price {
+  margin: 0;
+  margin-bottom: 0.7vw;
+  font-size: 2vw;
+  font-weight: bolder;
+}
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 100%;
+  margin-top: 1vw;
+}
+.cardButton {
+  width: 100%;
+  margin: auto;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  padding: 0.5vw;
+  color: rgb(242, 120, 151);
+}
+.cardButton:hover {
+  background-color: rgb(242, 120, 151);
+  color: white;
+  border: none;
+}

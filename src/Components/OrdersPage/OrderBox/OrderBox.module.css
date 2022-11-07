@@ -1,0 +1,39 @@
+.OrderBoxContainer {
+  border-bottom: 2px solid rgb(242, 121, 151);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vw;
+  padding: 1vw;
+  border-radius: 10px;
+}
+.OrderBoxContainer:hover {
+  background-color: rgba(242, 121, 151, 0.2);
+}
+.OrderBoxContainer p {
+  margin: 0;
+  margin-top: 0.25vw;
+  margin-bottom: 0.25vw;
+}
+.time {
+  border: 2px solid black;
+  width: fit-content;
+  padding: 0.5vw 2vw;
+  border-radius: 10px;
+  background-color: rgba(242, 121, 151, 0.5);
+  color: rgb(0, 0, 0);
+}
+.itemsTable table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.itemsTable th,
+.itemsTable td {
+  padding: 0.5vw;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {
+  background-color: rgb(187, 187, 187);
+}

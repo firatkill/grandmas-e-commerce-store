@@ -1,0 +1,78 @@
+.CheckoutPageContainer {
+  width: 90%;
+  margin: auto;
+}
+.header h2 {
+  margin: 0;
+  margin-top: 1rem;
+}
+.locationBox {
+}
+.subTitle {
+  display: flex;
+  align-items: center;
+}
+.subTitle h3 {
+  margin: 0;
+  margin-right: 0.5rem;
+}
+.payment ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5vw;
+  margin: 0;
+}
+.payment ul li {
+  margin-top: 1vw;
+  opacity: 0.4;
+  display: flex;
+  align-items: center;
+}
+.payment ul li input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+
+  position: relative;
+
+  margin-right: 1vw;
+  transform: scale(1.3);
+}
+.payment ul li input[type="radio"]:checked {
+  border: 6px solid rgb(242, 121, 151);
+
+  outline: unset !important; /* I added this one for Edge (chromium) support */
+}
+.payment ul li:first-of-type {
+  opacity: 1;
+}
+.placeOrderButton {
+  font-size: 1.5vw;
+  background-color: rgb(242, 120, 151);
+  color: white;
+  font-weight: bolder;
+
+  cursor: pointer;
+  margin-top: 2vw;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+
+.placeOrderButton:hover {
+  background-color: white;
+  border-color: rgb(242, 120, 151);
+  color: rgb(242, 120, 151);
+}
+.placeOrderButton a {
+  padding: 0.5vw 1vw;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: unset;
+}

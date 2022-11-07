@@ -1,0 +1,29 @@
+.NotFoundPage__Container {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NotFoundPage__Emoji {
+  font-size: 8vw;
+}
+.NotFoundPage__Text {
+  font-size: 4vw;
+  text-align: center;
+}
+.orderPlacedPageContainer {
+  padding-top: 5rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+}
+.appContainer {
+  height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
