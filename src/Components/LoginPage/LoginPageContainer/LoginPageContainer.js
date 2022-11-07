@@ -3,12 +3,13 @@ import LoginPageContainerCSS from "./LoginPageContainer.module.css";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { useUserLogin } from "../../../Hooks/CustomHooks";
-import { googleSignIn } from "../../../firebase/firebaseAuth";
+import { useGoogleSignIn } from "../../../firebase/firebaseAuth";
 function LoginPageContainer() {
   const styled = LoginPageContainerCSS;
   const userLogin = useUserLogin();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const googleSignIn = useGoogleSignIn();
   const changeHandler = (e) => {
     if (e.currentTarget.id === "loginEmail") {
       setEmail(e.currentTarget.value);

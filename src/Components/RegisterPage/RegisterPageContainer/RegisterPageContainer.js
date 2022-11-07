@@ -3,7 +3,7 @@ import RegisterPageContainerCSS from "./RegisterPageContainer.module.css";
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { useAddUserToDb, useUserRegister } from "../../../Hooks/CustomHooks";
-
+import { useGoogleSignIn } from "../../../firebase/firebaseAuth";
 function RegisterPageContainer() {
   const styled = RegisterPageContainerCSS;
   const [email, setEmail] = useState("");
@@ -11,7 +11,7 @@ function RegisterPageContainer() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const userRegister = useUserRegister();
   const addUserToDb = useAddUserToDb();
-
+  const googleSignIn = useGoogleSignIn();
   const changeHandler = (e) => {
     if (e.currentTarget.id === "registerEmailInput") {
       setEmail(e.currentTarget.value);
@@ -78,7 +78,12 @@ function RegisterPageContainer() {
       </form>
       <div className={styled.googleButton}>
         <h3>OR</h3>
-        <button className={styled.googleButton}>
+        <button
+          onClick={() => {
+            googleSignIn();
+          }}
+          className={styled.googleButton}
+        >
           <FcGoogle /> Sign in using Google
         </button>
       </div>

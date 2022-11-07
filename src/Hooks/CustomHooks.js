@@ -108,7 +108,16 @@ export const useUserLogin = () => {
   };
   return userLogin;
 };
-
+export const useCheckUserExisting = () => {
+  const checkUserExisting = async (id) => {
+    const response = await fetch(
+      `https://grandma-s-default-rtdb.firebaseio.com/users/${id}.json`
+    );
+    const resp = response.json();
+    return resp;
+  };
+  return checkUserExisting;
+};
 export const useGetUserInfosFromDb = () => {
   const dispatch = useDispatch();
 
@@ -126,8 +135,8 @@ export const useGetUserInfosFromDb = () => {
 };
 
 export const useAddUserToDb = () => {
-  const addUserToDb = (userId) => {
-    fetch(
+  const addUserToDb = async (userId) => {
+    await fetch(
       `https://grandma-s-default-rtdb.firebaseio.com/users/${userId}.json`,
       {
         method: "PUT",
